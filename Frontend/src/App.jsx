@@ -2,10 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import MainPage from "./pages/MainPage";
 import HospitalMap from "./pages/HospitalMap";
-import SymptomTriage from "./pages/SymptomTriage";
-import Chatbot from "./pages/Chatbot";
-
-
+import TriageHelper from "./pages/TriageHelper";
+import AdminHelper from "./pages/AdminHelper";
 
 export default function App() {
   return (
@@ -13,8 +11,8 @@ export default function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<MainPage />} />
         <Route path="map" element={<HospitalMap />} />
-        <Route path="triage" element={<SymptomTriage />} />
-        <Route path="chatbot" element={<Chatbot />} />
+        <Route path="triage-helper" element={<TriageHelper />} />
+        <Route path="admin-helper" element={<AdminHelper />} />
       </Route>
     </Routes>
   );

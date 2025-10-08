@@ -29,7 +29,7 @@ export default function Navbar() {
       <ul className="hidden md:flex flex-wrap space-x-4 text-gray-700 font-medium text-base md:ml-6 md:mt-0 mt-2">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/map">Hospital Map</Link></li>
-        <li><Link to="/triage">Symptom Triage</Link></li>
+        <li><Link to="/triage-helper">Triage Helper</Link></li>
         <li><Link to="/chatbot">Chatbot</Link></li>
       </ul>
       <div className="relative md:ml-6 md:mt-0 mt-2">
