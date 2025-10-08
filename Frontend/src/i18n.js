@@ -1,26 +1,26 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-
-// Translation resource files loaded here or via backend
-const resources = {
-  en: { translation: { welcome: "Welcome to Healthcare AI", select_language: "Please select your preferred language:", voice_input: "Voice Input (Coming Soon)" }},
-  'zh-CN': { translation: { welcome: "欢迎使用医疗AI", select_language: "[translate:请选择您偏好的语言：]", voice_input: "[translate:语音输入（敬请期待）]" }},
-  'zh-HK': { translation: { welcome: "歡迎使用醫療AI", select_language: "[translate:請選擇您偏好的語言：]", voice_input: "[translate:語音輸入（敬請期待）]" }},
-};
+import en from './locales/en.json';
+import zhCN from './locales/zh-CN.json';
+import zhHK from './locales/zh-HK.json';
 
 i18n
-  .use(LanguageDetector) 
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    resources,
-    fallbackLng: "en",
+    resources: {
+      en: { translation: en },
+      'zh-CN': { translation: zhCN },
+      'zh-HK': { translation: zhHK },
+    },
+    fallbackLng: 'en',
+    detection: {
+      order: ['localStorage', 'navigator'],
+      caches: ['localStorage'],
+    },
     interpolation: {
       escapeValue: false,
-    },
-    detection: {
-      order: ['localStorage', 'navigator', 'htmlTag'],
-      caches: ['localStorage'],
     },
   });
 

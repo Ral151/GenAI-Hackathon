@@ -1,23 +1,17 @@
 {
+  "welcome_message": "我哋喺度幫您醫病",
+  "choose_service": "選擇您想使用嘅服務 >>",
+  "hospital_map": "醫院地圖",
+  "triage_helper": "分診助手",
+  "admin_helper": "行政助手",
 
-  "welcome": "Welcome to Healthcare AI",
-  "select_language": "Please select your preferred language:",
-  "voice_input": "Voice Input (Coming Soon)",
-
-  "question": {
-    "fever": "您有冇發燒",
-    "breathing_difficulty": "您有冇呼吸困難"
-  },
-  "answer": {
-    "yes": "有",
-    "no": "冇"
-  },
-  "result": {
-    "recommendation": "根據您的回答，我哋建議您就診"
-  },
-  "department": {
-    "general_practice": "普通內科",
-    "infectious_disease": "傳染病科",
-    "pulmonology": "呼吸內科"
+  "navbar": {
+    "home": "主頁",
+    "hospital_map": "医院地图",
+    "triage_helper": "分诊助手",
+    "chatbot": "聊天机器人"
   }
+
 }
+
+

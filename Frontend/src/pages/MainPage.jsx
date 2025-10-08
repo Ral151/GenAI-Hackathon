@@ -1,34 +1,26 @@
-import { useState } from "react";
-import { FaLanguage } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import { FcPhoneAndroid, FcBiotech, FcAutomotive } from "react-icons/fc";
 import { Link } from "react-router-dom";
 
-export default function App() {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [language, setLanguage] = useState("English");
-
-  const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
-  const selectLanguage = (lang) => {
-    setLanguage(lang);
-    setDropdownOpen(false);
-  };
+export default function MainPage() {
+  const { t } = useTranslation();
 
   const sections = [
     {
-      title: "Hospital Map",
-      description: "Locate nearest Hospital",
+      title: t("hospital_map"),
+      description: t("hospital_map_description"),
       icon: <FcAutomotive />,
       path: "/map",
     },
     {
-      title: "Triage Helper",
-      description: "Detect your symptoms",
+      title: t("triage_helper"),
+      description: t("triage_helper_description"),
       icon: <FcBiotech />,
       path: "/triage-helper",
     },
     {
-      title: "Admin Helper",
-      description: "Handle appointment & info",
+      title: t("admin_helper"),
+      description: t("admin_helper_description"),
       icon: <FcPhoneAndroid />,
       path: "/admin-helper",
     },
@@ -38,10 +30,10 @@ export default function App() {
     <div className="min-h-screen bg-gray-50">
       <main className="max-w-7xl mx-auto p-6">
         <h1 className="text-2xl md:text-3xl font-semibold text-center mb-6">
-          We’re here to help you cure your sickness
+          {t("welcome_message")}
         </h1>
         <p className="text-center text-green-600 mb-10 cursor-pointer hover:underline">
-          Choose service do you want to use &gt;&gt;
+          {t("choose_service")}
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {sections.map(({ title, description, icon, path }) => (

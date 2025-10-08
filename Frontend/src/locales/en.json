@@ -1,23 +1,17 @@
 {
+  "welcome_message": "We're here to help you cure your sickness",
+  "choose_service": "Choose service you want to use >>",
+  "hospital_map": "Hospital Map",
+  "triage_helper": "Triage Helper",
+  "admin_helper": "Admin Helper",
+  
 
-  "welcome": "Welcome to Healthcare AI",
-  "select_language": "Please select your preferred language:",
-  "voice_input": "Voice Input (Coming Soon)",
-
-  "question": {
-    "fever": "Do you have a fever?",
-    "breathing_difficulty": "Do you have difficulty breathing?"
-  },
-  "answer": {
-    "yes": "Yes",
-    "no": "No"
-  },
-  "result": {
-    "recommendation": "Based on your answers, we recommend seeing"
-  },
-  "department": {
-    "general_practice": "General Practice",
-    "infectious_disease": "Infectious Disease",
-    "pulmonology": "Pulmonology"
+  "navbar": {
+    "home": "Home",
+    "hospital_map": "Hospital Map",
+    "triage_helper": "Triage Helper",
+    "chatbot": "Chatbot"
   }
 }
+
+

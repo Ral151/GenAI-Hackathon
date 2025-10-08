@@ -1,23 +1,15 @@
 {
-  
-  "welcome": "Welcome to Healthcare AI",
-  "select_language": "Please select your preferred language:",
-  "voice_input": "Voice Input (Coming Soon)",
+  "welcome_message": "我们在这里帮助您治病",
+  "choose_service": "请选择您要使用的服务 >>",
+  "hospital_map": "医院地图",
+  "triage_helper": "分诊助手",
+  "admin_helper": "行政助手",
 
-  "question": {
-    "fever": "您有发烧吗",
-    "breathing_difficulty": "您有呼吸困难吗"
-  },
-  "answer": {
-    "yes": "是",
-    "no": "否"
-  },
-  "result": {
-    "recommendation": "根据您的回答，我们建议您就诊"
-  },
-  "department": {
-    "general_practice": "普通内科",
-    "infectious_disease": "传染病科",
-    "pulmonology": "呼吸内科"
+   "navbar": {
+    "home": "主頁",
+    "hospital_map": "医院地图",
+    "triage_helper": "分诊助手",
+    "chatbot": "聊天机器人"
   }
+
 }
