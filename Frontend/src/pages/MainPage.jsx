@@ -14,15 +14,28 @@ export default function App() {
   };
 
   const sections = [
-    { title: "Hospital Map", description: "Locate nearest Hospital", icon: <FcAutomotive />, path: "/map" },
-    { title: "Symptom Triage", description: "Detect your symptoms", icon: <FcBiotech />, path: "/triage" },
-    { title: "Chatbot", description: "Do medical things with AI", icon: <FcPhoneAndroid />, path: "/chatbot" },
+    {
+      title: "Hospital Map",
+      description: "Locate nearest Hospital",
+      icon: <FcAutomotive />,
+      path: "/map",
+    },
+    {
+      title: "Triage Helper",
+      description: "Detect your symptoms",
+      icon: <FcBiotech />,
+      path: "/triage-helper",
+    },
+    {
+      title: "Admin Helper",
+      description: "Handle appointment & info",
+      icon: <FcPhoneAndroid />,
+      path: "/admin-helper",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-gray-50">
-      
-
       <main className="max-w-7xl mx-auto p-6">
         <h1 className="text-2xl md:text-3xl font-semibold text-center mb-6">
           We’re here to help you cure your sickness
