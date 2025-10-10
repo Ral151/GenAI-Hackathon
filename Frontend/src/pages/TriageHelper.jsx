@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useVoice } from "../hooks/useVoice"; // Assume this hook is implemented correctly
+import { useVoice } from "../hooks/useVoice";
+import { useTranslation } from "react-i18next";
 
 const mockAIResponse = (input) => {
   if (input.toLowerCase().includes("chest pain")) {
@@ -10,8 +11,28 @@ const mockAIResponse = (input) => {
   return "Thank you for describing your symptoms. Please wait for medical assessment.";
 };
 
+function getLangCodes(i18nLang) {
+  switch(i18nLang) {
+    case "zh-CN":
+      return { recognitionLang: "zh-CN", synthesisLang: "zh-CN" }; // Mandarin
+    case "zh-HK":
+      return { recognitionLang: "yue-Hant-HK", synthesisLang: "zh-HK" }; // Cantonese, use zh-HK for synthesis (more widely supported)
+    case "en":
+    case "en-US":
+    default:
+      return { recognitionLang: "en-US", synthesisLang: "en-US" };
+  }
+}
+
 export default function TriageHelper() {
-  const { transcript, startListening, stopListening, speak } = useVoice();
+  const { i18n } = useTranslation();
+  const { recognitionLang, synthesisLang } = getLangCodes(i18n.language);
+
+  const { transcript, isListening, startListening, stopListening, speak } = useVoice({
+    recognitionLang,
+    synthesisLang,
+  });
+
   const [messages, setMessages] = useState([
     { from: "bot", text: "Hi, please describe your symptoms or say hello to start." },
   ]);
@@ -44,11 +65,11 @@ export default function TriageHelper() {
 
   const toggleVoiceMode = () => {
     if (!voiceMode) {
-      setVoiceMode(true);
       startListening();
+      setVoiceMode(true);
     } else {
-      setVoiceMode(false);
       stopListening();
+      setVoiceMode(false);
     }
   };
 
@@ -66,6 +87,7 @@ export default function TriageHelper() {
         >
           {voiceMode ? "Stop Voice" : "Start Voice"}
         </button>
+        {isListening && <p>Listening...</p>}
       </div>
       <div
         className="flex-grow border rounded-lg p-4 overflow-y-auto mb-4 h-72"
