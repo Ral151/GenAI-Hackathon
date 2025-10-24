@@ -29,7 +29,7 @@ export default function AdminHelper() {
       setLoading(false);
     }
     fetchUser();
-  }, []); 
+  }, []);
 
   if (loading) return <p></p>;
 
@@ -72,16 +72,14 @@ export default function AdminHelper() {
 
   return (
     <div className="max-w-3xl mx-auto p-6">
-           {" "}
+      {" "}
       <h2 className="text-3xl font-semibold mb-6">
         Admin Helper - Appointment Booking
-      </h2>
-           {" "}
+      </h2>{" "}
       <form onSubmit={handleSubmit} className="space-y-6">
-                {/* Personal details */}       {" "}
+        {/* Personal details */}{" "}
         <div>
-                    <label className="block font-medium mb-1">Full Name</label>
-                   {" "}
+          <label className="block font-medium mb-1">Full Name</label>{" "}
           <input
             type="text"
             name="name"
@@ -89,14 +87,11 @@ export default function AdminHelper() {
             onChange={handleChange}
             required
             className="w-full rounded border px-3 py-2"
-          />
-                 {" "}
-        </div>
-               {" "}
+          />{" "}
+        </div>{" "}
         <div>
-                   {" "}
-          <label className="block font-medium mb-1">Date of Birth</label>
-                   {" "}
+          {" "}
+          <label className="block font-medium mb-1">Date of Birth</label>{" "}
           <input
             type="date"
             name="dob"
@@ -104,13 +99,10 @@ export default function AdminHelper() {
             onChange={handleChange}
             required
             className="w-full rounded border px-3 py-2"
-          />
-                 {" "}
-        </div>
-               {" "}
+          />{" "}
+        </div>{" "}
         <div>
-                    <label className="block font-medium mb-1">Sex</label>       
-           {" "}
+          <label className="block font-medium mb-1">Sex</label>{" "}
           <select
             name="sex"
             value={form.sex}
@@ -118,18 +110,15 @@ export default function AdminHelper() {
             required
             className="w-full rounded border px-3 py-2"
           >
-                        <option value="">Select</option>           {" "}
-            <option value="female">Female</option>           {" "}
-            <option value="male">Male</option>           {" "}
-            <option value="other">Other</option>         {" "}
-          </select>
-                 {" "}
-        </div>
-               {" "}
+            <option value="">Select</option>{" "}
+            <option value="female">Female</option>{" "}
+            <option value="male">Male</option>{" "}
+            <option value="other">Other</option>{" "}
+          </select>{" "}
+        </div>{" "}
         <div>
-                   {" "}
-          <label className="block font-medium mb-1">ID (e.g., HKID)</label>
-                   {" "}
+          {" "}
+          <label className="block font-medium mb-1">ID (e.g., HKID)</label>{" "}
           <input
             type="text"
             name="id"
@@ -137,61 +126,50 @@ export default function AdminHelper() {
             onChange={handleChange}
             required
             className="w-full rounded border px-3 py-2"
-          />
-                 {" "}
-        </div>
-               {" "}
+          />{" "}
+        </div>{" "}
         <div>
-                    <label className="block font-medium mb-1">Allergies</label>
-                   {" "}
+          <label className="block font-medium mb-1">Allergies</label>{" "}
           <textarea
             name="allergies"
             value={form.allergies}
             onChange={handleChange}
             className="w-full rounded border px-3 py-2"
             rows={2}
-          />
-                 {" "}
-        </div>
-               {" "}
+          />{" "}
+        </div>{" "}
         <div>
-                   {" "}
+          {" "}
           <label className="block font-medium mb-1">
             Current Medical Conditions
-          </label>
-                   {" "}
+          </label>{" "}
           <textarea
             name="currentConditions"
             value={form.currentConditions}
             onChange={handleChange}
             className="w-full rounded border px-3 py-2"
             rows={2}
-          />
-                 {" "}
-        </div>
-               {" "}
+          />{" "}
+        </div>{" "}
         <div>
-                   {" "}
+          {" "}
           <label className="block font-medium mb-1">
             Past Medical Conditions
-          </label>
-                   {" "}
+          </label>{" "}
           <textarea
             name="pastConditions"
             value={form.pastConditions}
             onChange={handleChange}
             className="w-full rounded border px-3 py-2"
             rows={2}
-          />
-                 {" "}
+          />{" "}
         </div>
-                {/* Appointment booking */}       {" "}
+        {/* Appointment booking */}{" "}
         <div>
-                   {" "}
+          {" "}
           <label className="block font-medium mb-1">
             Preferred Appointment Date
-          </label>
-                   {" "}
+          </label>{" "}
           <input
             type="date"
             name="appointmentDate"
@@ -199,14 +177,11 @@ export default function AdminHelper() {
             onChange={handleChange}
             required
             className="w-full rounded border px-3 py-2"
-          />
-                 {" "}
-        </div>
-               {" "}
+          />{" "}
+        </div>{" "}
         <div>
-                   {" "}
-          <label className="block font-medium mb-1">Preferred Time</label>
-                   {" "}
+          {" "}
+          <label className="block font-medium mb-1">Preferred Time</label>{" "}
           <input
             type="time"
             name="appointmentTime"
@@ -214,55 +189,45 @@ export default function AdminHelper() {
             onChange={handleChange}
             required
             className="w-full rounded border px-3 py-2"
-          />
-                 {" "}
+          />{" "}
         </div>
-                {/* Permissions */}       {" "}
+        {/* Permissions */}{" "}
         <div className="flex items-center space-x-4">
-                   {" "}
+          {" "}
           <label className="inline-flex items-center">
-                       {" "}
+            {" "}
             <input
               type="checkbox"
               name="shareHospital"
               checked={form.shareHospital}
               onChange={handleChange}
               className="form-checkbox h-5 w-5 text-green-600"
-            />
-                       {" "}
+            />{" "}
             <span className="ml-2">
               Permission to share information with hospital
-            </span>
-                     {" "}
-          </label>
-                   {" "}
+            </span>{" "}
+          </label>{" "}
           <label className="inline-flex items-center">
-                       {" "}
+            {" "}
             <input
               type="checkbox"
               name="shareEmergency"
               checked={form.shareEmergency}
               onChange={handleChange}
               className="form-checkbox h-5 w-5 text-green-600"
-            />
-                       {" "}
+            />{" "}
             <span className="ml-2">
               Permission to share with emergency contacts
-            </span>
-                     {" "}
-          </label>
-                 {" "}
-        </div>
-               {" "}
+            </span>{" "}
+          </label>{" "}
+        </div>{" "}
         <button
           type="submit"
           className="bg-green-600 text-white px-6 py-3 rounded font-semibold hover:bg-green-700"
         >
           Submit Appointment Request
-        </button>
-             {" "}
-      </form>
-         {" "}
+        </button>{" "}
+      </form>{" "}
     </div>
   );
 }
