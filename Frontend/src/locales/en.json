@@ -4,14 +4,114 @@
   "hospital_map": "Hospital Map",
   "triage_helper": "Triage Helper",
   "admin_helper": "Admin Helper",
+  "appointment_history": "Appointment History",
+  "chatbot_history": "Chatbot History",
   
+  "hospital_map_description": "See all hospitals in Hong Kong on an interactive map.",
+  "triage_helper_description": "Assist you in determining the urgency of your medical condition and make an appointment.",
+  "admin_helper_description": "Get help with administrative tasks related to your healthcare.",
+  "appointment_history_description": "View your past appointments and their details.",
+  "chatbot_history_description": "View your past interactions with the chatbot.",
 
   "navbar": {
     "home": "Home",
     "hospital_map": "Hospital Map",
     "triage_helper": "Triage Helper",
     "chatbot": "Chatbot"
-  }
+  },
+
+
+  "admin_helper_title": "Admin Helper - Appointment Booking",
+  "full_name": "Full Name",
+  "full_name_placeholder": "Enter your full name",
+  "date_of_birth": "Date of Birth",
+  "sex": "Sex",
+  "select": "Select",
+  "female": "Female",
+  "male": "Male",
+  "other": "Other",
+  "id_number": "ID (e.g., HKID)",
+  "id_placeholder": "Enter your ID number",
+  "preferred_hospital": "Preferred Hospital",
+  "hospital_placeholder": "Start typing to search hospitals...",
+  "allergies": "Allergies",
+  "allergies_placeholder": "List any allergies you have",
+  "current_conditions": "Current Medical Conditions",
+  "current_conditions_placeholder": "Describe your current medical conditions",
+  "past_conditions": "Past Medical Conditions",
+  "past_conditions_placeholder": "Describe any past medical conditions",
+  "preferred_date": "Preferred Appointment Date",
+  "preferred_time": "Preferred Time",
+  "share_hospital": "Permission to share information with hospital",
+  "share_emergency": "Permission to share with emergency contacts",
+  "submit_appointment": "Submit Appointment Request",
+
+  
+  "appointment_history_title": "Your Appointment History",
+  "loading_appointments": "Loading appointments...",
+  "no_appointments_found": "No appointments found.",
+  "appointment_date": "Appointment Date",
+  "time": "Time",
+  "name": "Name",
+  "hospital": "Hospital",
+  "not_specified": "Not specified",
+  "not_available": "N/A",
+  "permissions": "Permissions",
+  "hospital_sharing": "Hospital Sharing",
+  "emergency_contact_sharing": "Emergency Contact Sharing",
+  "no_sharing_permissions": "No sharing permissions",
+  "and": "|",
+
+
+  "chat_history_title": "Chat History",
+  "chat_history_subtitle": "Continue previous conversations or start new ones",
+  "new_chat": "New Chat",
+  "clear_all": "Clear All",
+  "conversations": "Conversations",
+  "total_messages": "Total Messages",
+  "active_chats": "Active Chats",
+  "no_conversations": "No conversations yet.",
+  "start_new_chat_prompt": "Start a new chat to begin your conversation!",
+  "start_new_chat": "Start New Chat",
+  "messages": "messages",
+  "started": "Started",
+  "last_activity": "Last activity",
+  "continue": "Continue",
+  "delete": "Delete",
+  "you": "You: ",
+  "bot": "Bot: ",
+  "new_conversation": "New Conversation",
+  "loading": "Loading...",
+
+  "login_title": "Login",
+  "email": "Email",
+  "email_placeholder": "Enter your email",
+  "password": "Password",
+  "password_placeholder": "Enter your password",
+  "login_button": "Login",
+  "logging_in": "Logging in...",
+  "no_account": "Don't have an account?",
+  "create_account": "Create one",
+
+
+  "user_profile_title": "User Profile",
+  "loading_profile": "Loading profile...",
+  "no_profile_data": "No profile data found.",
+
+
+  "not_provided": "Not provided",
+  "logout": "Logout",
+  
+  
+  
+  "register_title": "Create Account",
+  
+  "select_sex_placeholder": "Select your sex",
+  "prefer_not_to_say": "Prefer not to say",
+  "create_account_button": "Create Account",
+  "creating_account": "Creating Account...",
+  "already_have_account": "Already have an account?",
+  "login": "Login"
 }
 
 

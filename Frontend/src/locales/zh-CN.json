@@ -4,12 +4,125 @@
   "hospital_map": "医院地图",
   "triage_helper": "分诊助手",
   "admin_helper": "行政助手",
+  "appointment_history": "预约记录",
+  "chatbot_history": "聊天记录",
+  
+  "hospital_map_description": "在香港互动地图上查看所有医院。",
+  "triage_helper_description": "协助您确定医疗状况的紧急程度并进行预约。",
+  "admin_helper_description": "获取与您的医疗保健相关的行政任务帮助。",
+  "appointment_history_description": "查看您过去的预约及其详细信息。",
+  "chatbot_history_description": "查看您与聊天机器人的过往互动。",
 
-   "navbar": {
+  "navbar": {
     "home": "主頁",
     "hospital_map": "医院地图",
     "triage_helper": "分诊助手",
     "chatbot": "聊天机器人"
-  }
+  },
+
+  
+  
+  "admin_helper_title": "行政助手 - 预约预订",
+  "full_name": "全名",
+  "full_name_placeholder": "请输入您的全名",
+  "date_of_birth": "出生日期",
+  "sex": "性别",
+  "select": "选择",
+  "female": "女性",
+  "male": "男性",
+  "other": "其他",
+  "id_number": "身份证号码（例如：香港身份证）",
+  "id_placeholder": "请输入您的身份证号码",
+  "preferred_hospital": "首选医院",
+  "hospital_placeholder": "开始输入以搜索医院...",
+  "allergies": "过敏史",
+  "allergies_placeholder": "列出您有任何过敏",
+  "current_conditions": "当前医疗状况",
+  "current_conditions_placeholder": "描述您当前的医疗状况",
+  "past_conditions": "过往医疗状况",
+  "past_conditions_placeholder": "描述任何过往医疗状况",
+  "preferred_date": "首选预约日期",
+  "preferred_time": "首选时间",
+  "share_hospital": "允许与医院共享信息",
+  "share_emergency": "允许与紧急联系人共享",
+  "submit_appointment": "提交预约请求",
+  
+
+  "appointment_history_title": "您的预约记录",
+  "loading_appointments": "正在加载预约...",
+  "no_appointments_found": "未找到预约记录。",
+  "appointment_date": "预约日期",
+  "time": "时间",
+  "name": "姓名",
+
+  "not_specified": "未指定",
+
+
+
+  "not_available": "无",
+  "permissions": "权限",
+  "hospital_sharing": "医院共享",
+  "emergency_contact_sharing": "紧急联系人共享",
+  "no_sharing_permissions": "无共享权限",
+  "and": "|",
+
+  
+  "chat_history_title": "聊天记录",
+  "chat_history_subtitle": "继续之前的对话或开始新的对话",
+  "new_chat": "新聊天",
+  "clear_all": "清除全部",
+  "conversations": "对话",
+  "total_messages": "总消息数",
+  "active_chats": "活跃聊天",
+  "no_conversations": "暂无对话记录。",
+  "start_new_chat_prompt": "开始新聊天以开始您的对话！",
+  "start_new_chat": "开始新聊天",
+  "messages": "条消息",
+  "started": "开始于",
+  "last_activity": "最后活动",
+  "continue": "继续",
+  "delete": "删除",
+  "you": "您：",
+  "bot": "机器人：",
+  "new_conversation": "新对话",
+  "loading": "加载中...",
+
+  
+  "login_title": "登录",
+  "email": "邮箱",
+  "email_placeholder": "请输入您的邮箱",
+  "password": "密码",
+  "password_placeholder": "请输入您的密码",
+  "login_button": "登录",
+  "logging_in": "登录中...",
+  "no_account": "还没有账户？",
+  "create_account": "创建一个",
+
+  
+  "user_profile_title": "用户资料",
+  "loading_profile": "正在加载个人资料...",
+  "no_profile_data": "未找到个人资料数据。",
+ 
+  "not_provided": "未提供",
+  "logout": "退出登录",
+
+
+  
+  
+  "register_title": "创建账户",
+  
+  "prefer_not_to_say": "不愿透露",
+  "create_account_button": "创建账户",
+  "creating_account": "创建账户中...",
+  "already_have_account": "已有账户？",
+  "login": "登录"
+
+ 
+
 
 }
+
+
+  
+
+

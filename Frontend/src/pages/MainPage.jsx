@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { FaClipboardList } from "react-icons/fa";
+import { LuBotMessageSquare } from "react-icons/lu";
 import { FcPhoneAndroid, FcBiotech, FcAutomotive } from "react-icons/fc";
 import { Link } from "react-router-dom";
 
@@ -9,27 +10,33 @@ export default function MainPage() {
   const sections = [
     {
       title: t("hospital_map"),
-      description: t("See all hospitals in Hong Kong on an interactive map."),
+      description: t("hospital_map_description"),
       icon: <FcAutomotive />,
       path: "/map",
     },
     {
       title: t("triage_helper"),
-      description: t("Assist you in determining the urgency of your medical condition and make an appointment."),
+      description: t("triage_helper_description"),
       icon: <FcBiotech />,
       path: "/triage-helper",
     },
     {
       title: t("admin_helper"),
-      description: t("Get help with administrative tasks related to your healthcare."),
+      description: t("admin_helper_description"),
       icon: <FcPhoneAndroid />,
       path: "/admin-helper",
     },
     {
       title: t("appointment_history"),
-      description: t("View your past appointments and their details."),
+      description: t("appointment_history_description"),
       icon: <FaClipboardList />,
       path: "/appointments",
+    },
+    {
+      title: t("chatbot_history"),
+      description: t("chatbot_history_description"),
+      icon: <LuBotMessageSquare />,
+      path: "/chatbot-history",
     },
   ];
 

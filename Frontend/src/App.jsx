@@ -11,6 +11,7 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import UserProfile from "./pages/UserProfile";
 import AppointmentHistory from "./pages/AppointmentHistory";
+import ChatComponent from "./pages/ChatComponent";
 import ChatbotHistory from "./pages/ChatbotHistory";
 
 function ProtectedRoute() {
@@ -54,7 +55,8 @@ export default function App() {
           <Route path="triage-helper" element={<TriageHelper />} />
           <Route path="admin-helper" element={<AdminHelper />} />
           <Route path="appointments" element={<AppointmentHistory />} />
-          <Route path="chat-history" element={<ChatbotHistory />} />
+          <Route path="chatbot-history" element={<ChatbotHistory />} />
+          <Route path="chat" element={<ChatComponent />} />
           <Route path="profile" element={<UserProfile />} />
         </Route>
       </Route>

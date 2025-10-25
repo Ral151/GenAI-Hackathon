@@ -7,9 +7,12 @@ import removeMd from "remove-markdown";
 
 const fetchAIResponse = async (input) => {
   try {
-    const res = await fetch("https://noisy-dolphin-94.ral151.deno.net", {
+    // Change the URL if necessary 
+    const res = await fetch("https://violation-precious-expanded-sagem.trycloudflare.com", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { 
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify({ query: input }),
     });
     
@@ -19,6 +22,7 @@ const fetchAIResponse = async (input) => {
     
     const data = await res.json();
     return data.reply || "Sorry, I couldn't understand that.";
+    
   } catch (err) {
     console.error("AI fetch error:", err);
     return "There was an error connecting to the AI service.";
