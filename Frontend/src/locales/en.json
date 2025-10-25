@@ -8,7 +8,7 @@
   "chatbot_history": "Chatbot History",
   
   "hospital_map_description": "See all hospitals in Hong Kong on an interactive map.",
-  "triage_helper_description": "Assist you in determining the urgency of your medical condition and make an appointment.",
+  "triage_helper_description": "Assist you in making an appointment.",
   "admin_helper_description": "Get help with administrative tasks related to your healthcare.",
   "appointment_history_description": "View your past appointments and their details.",
   "chatbot_history_description": "View your past interactions with the chatbot.",
@@ -113,5 +113,3 @@
   "already_have_account": "Already have an account?",
   "login": "Login"
 }
-
-

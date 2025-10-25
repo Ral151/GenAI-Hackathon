@@ -17,7 +17,7 @@ export default function ChatComponent() {
   const fetchAIResponse = async (input) => {
     try {
       // Change the URL if necessary
-      const COLAB_URL = "https://violation-precious-expanded-sagem.trycloudflare.com/chat";
+      const COLAB_URL = "https://cases-cycles-pit-locally.trycloudflare.com/api/chat";
 
       const res = await fetch(COLAB_URL, {
         method: "POST",

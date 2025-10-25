@@ -8,7 +8,7 @@
   "chatbot_history": "聊天記錄",
   
   "hospital_map_description": "喺互動地圖上查看香港所有醫院。",
-  "triage_helper_description": "協助您確定醫療狀況嘅緊急程度並進行預約。",
+  "triage_helper_description": "- 协助您预约。",
   "admin_helper_description": "獲取與您醫療保健相關嘅行政任務幫助。",
   "appointment_history_description": "查看您過去嘅預約同詳細資料。",
   "chatbot_history_description": "查看您同聊天機器人嘅過往互動。",

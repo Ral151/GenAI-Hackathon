@@ -3,25 +3,41 @@ import { supabase } from "./supabaseClient";
 
 import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
-import removeMd from "remove-markdown";
+import removeMd from "remove-markdown"; 
 
 const fetchAIResponse = async (input) => {
   try {
-    // Change the URL if necessary 
-    const res = await fetch("https://violation-precious-expanded-sagem.trycloudflare.com", {
+    console.log("Sending query to AI:", input);
+    
+    const res = await fetch("https://cases-cycles-pit-locally.trycloudflare.com/api/chat", {
       method: "POST",
       headers: { 
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ query: input }),
+      body: JSON.stringify({ query: input })
     });
+    
+    console.log("Response status:", res.status);
+    console.log("Response OK:", res.ok);
     
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
     }
     
     const data = await res.json();
-    return data.reply || "Sorry, I couldn't understand that.";
+    console.log("AI Response data:", data);
+    
+    // ✅ Better empty response handling
+    const aiReply = data.reply || data.response || data.answer || 
+                   data.message || data.text || data.content ||
+                   data.result || data.output;
+    
+    // Check if response is empty or just whitespace
+    if (!aiReply || aiReply.trim() === '') {
+      return "I'm not sure how to help with that. Could you try asking in a different way?";
+    }
+    
+    return aiReply;
     
   } catch (err) {
     console.error("AI fetch error:", err);
@@ -63,7 +79,7 @@ export default function TriageHelper() {
   const [messages, setMessages] = useState([
     {
       from: "bot",
-      text: "Hi, please describe your symptoms or say hello to start.",
+      text: "Hi, How can I assist you today?",
     },
   ]);
   const [userId, setUserId] = useState(null);
@@ -430,7 +446,7 @@ export default function TriageHelper() {
         
         {messages.length === 1 && (
           <div className="text-gray-500 text-sm italic mt-4">
-            Tip: You can type your symptoms or use voice input for convenience.
+            Tip: You can type or use voice input for convenience.
           </div>
         )}
       </div>
@@ -442,7 +458,7 @@ export default function TriageHelper() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder={isProcessing ? "Processing..." : "Type your symptoms..."}
+          placeholder={isProcessing ? "Processing..." : "Type your input here..."}
           className="flex-grow border rounded px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-green-500 disabled:opacity-50"
           disabled={isProcessing}
           aria-label="User symptom input"
